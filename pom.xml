@@ -12,7 +12,6 @@
         <allure.version>1.4.23.HOTFIX1</allure.version>
         <aspectj.version>1.8.9</aspectj.version>
         <compiler.version>1.7</compiler.version>
-        <suite>*Test</suite>
         <driver.browser>chrome</driver.browser>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <test.includeCategories></test.includeCategories>
@@ -85,7 +84,7 @@
         <profile>
             <id>acceptance</id>
             <properties>
-                <test.excludeCategories>com.todomvc.categories.Smoke</test.excludeCategories>
+                <test.excludeCategories>com.todomvc.categories.Buggy</test.excludeCategories>
             </properties>
         </profile>
 
@@ -94,6 +93,10 @@
             <properties>
                 <test.includeCategories>com.todomvc.categories.Buggy</test.includeCategories>
             </properties>
+        </profile>
+
+        <profile>
+            <id>All</id>
         </profile>
     </profiles>
 
