@@ -41,6 +41,4 @@ public class TodosE2ETest extends BaseTest{
         page.delete("b");
         page.assertNoVisibleTasks();
     }
-
-
 }

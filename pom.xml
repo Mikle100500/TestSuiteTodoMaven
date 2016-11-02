@@ -51,6 +51,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
+
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.surefire</groupId>
@@ -58,9 +59,11 @@
                         <version>2.18.1</version>
                     </dependency>
                 </dependencies>
+
                 <configuration>
                     <systemPropertyVariables>
-                        <webdriver.chrome.driver>C://Users//m.pavlenko//Chromedriver//chromedriver.exe</webdriver.chrome.driver>
+                        <webdriver.chrome.driver>C://Users//m.pavlenko//Chromedriver//chromedriver.exe
+                        </webdriver.chrome.driver>
                         <driver.browser>${driver.browser}</driver.browser>
                     </systemPropertyVariables>
                     <groups>${test.includeCategories}</groups>
@@ -72,7 +75,6 @@
     </build>
 
     <profiles>
-
         <profile>
             <id>smoke</id>
             <properties>
